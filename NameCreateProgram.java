@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class FindNewName 
+public class NameCreateProgram
 {
 	public static void combineChar(String name1, String name2)
 	{
