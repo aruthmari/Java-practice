@@ -5,22 +5,22 @@ public class FindNewName
 {
 	public static void combineChar(String name1, String name2)
 	{
-		int l1 = name1.length(),l2 = name2.length(),lm = Math.min(l1, l2);	
+		int l1 = name1.length(),l2 = name2.length(),lm = Math.min(l1, l2);
 
 		char newName[] = new char[lm];
 		Random rand = new Random();
 
 		for (int i=0;i<=15;i++)
 		{			
-			for (int a=0;a<=lm-1;a+=2)
+			for (int a=0;a<=lm-1;a+=2)	// loop for assign name1 random chars on odd order
 			{
-				newName [a] = name1.charAt((int)rand.nextInt(l1));
+				newName [a] = name1.charAt((int)rand.nextInt(l1));	//pick a random char from the name1
 			}
-			for (int b=1;b<=lm-1;b+=2)
+			for (int b=1;b<=lm-1;b+=2)	// loop for assign name1 random chars on even order
 			{
-				newName [b] = name2.charAt((int)rand.nextInt(l2));					
+				newName [b] = name2.charAt((int)rand.nextInt(l2));	//pick a random char from the name2		
 			}			
-			StringBuilder name3 = new StringBuilder();
+			StringBuilder name3 = new StringBuilder();	// to build string from char array 
 			name3.append(newName);
 			System.out.println(name3.toString());
 		}
