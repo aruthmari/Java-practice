@@ -22,7 +22,9 @@ public class CharCount
 	
 	public static void main(String []args)
 	{
-		CharCount input = new CharCount();
-		input.set1("marimuthu");
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter your NAME");
+		String str = input.nextLine();
+		CharCount.set1(str);
 	}
 }
