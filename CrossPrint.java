@@ -1,9 +1,8 @@
 package com.aruth.practice;
 
-public class Intro {
+public class CrossPrint {
 
 	public static void main(String[] args) {
-		System.out.println("Hello World");
 	}
 
 }
